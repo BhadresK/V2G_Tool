@@ -54,6 +54,9 @@ def to_allin_ct(spot_eur_kwh: np.ndarray,
 
 CSV_PATH = "2025_Electricity_Price.csv"
 
+from auth import require_login
+require_login()
+
 st.set_page_config(
     page_title="S.KOe COOL - V2G Optimisation",
     page_icon="",
