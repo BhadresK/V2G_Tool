@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Setup environment",
+      "type": "shell",
+      "command": "python setup_env.py"
+    },
+    {
+      "label": "Run Streamlit",
+      "type": "shell",
+      "command": "source .venv/bin/activate && streamlit run app.py --server.enableCORS false --server.enableXsrfProtection false",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    }
+  ]
+}
